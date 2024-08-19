@@ -1,0 +1,11 @@
+Given the issue: {{ query }} and given troubleshooting docs:
+
+{% for document in documents %}
+    {{ document.content }}
+{% endfor %}
+
+Point out the service or two services that is(are) most probably failing or suggest steps to investigate deeper.
+Format output as the following:
+"1. suspected service(s) (rationale)
+2. further steps".
+Be concise.

@@ -1,0 +1,8 @@
+SUN reporting system
+
+Report execution includes execution of the following services:
+1. sunprepsvc - for report parameter transformation
+2. sunacquiresvc - for historical data acquisition
+3.1. sunpdfsvc - for PDF output format rendering
+or
+3.2. sunxlsxsvc - for XLSX report rendering
