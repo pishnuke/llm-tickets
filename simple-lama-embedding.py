@@ -11,7 +11,7 @@ from haystack_integrations.components.embedders.ollama import OllamaDocumentEmbe
 
 
 MODEL="llama3.1"
-PROMPT="prompt2.txt"
+PROMPT="prompt1.txt"
 TICKET="ticket2.txt"
 
 document_store = InMemoryDocumentStore(embedding_similarity_function="dot_product")
@@ -33,7 +33,7 @@ pipe.add_component("llm", OllamaGenerator(model=MODEL, url="http://localhost:114
 pipe.connect("retriever", "prompt_builder.documents")
 pipe.connect("prompt_builder", "llm")
 
-query = open(TICKET, 'r').read()
+query = open(os.path.join("input", TICKET), 'r').read()
 query_embedding = text_embedder.run(query)["embedding"]
 
 response = pipe.run({"prompt_builder": {"query": query}, "retriever": {"query_embedding": query_embedding}})

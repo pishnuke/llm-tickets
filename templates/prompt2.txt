@@ -8,4 +8,3 @@ Point out the service or two services that is(are) most probably failing or sugg
 Format output as the following:
 "1. suspected service(s) (rationale)
 2. further steps".
-Be concise.

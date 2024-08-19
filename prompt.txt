@@ -6,7 +6,7 @@ Report execution includes execution of the following services:
 1. moonprepsvc - for report parameter transformation
 2. moonacquiresvc - for historical data acquisition
 3. moonrealtimedatasvc - for real time data acquisition
-4. moonrendersvc - for report rendering" with relevance 0.5
+4. moonrendersvc - for report rendering"
 "SUN reporting system
 
 Report execution includes execution of the following services:
@@ -14,6 +14,6 @@ Report execution includes execution of the following services:
 2. sunacquiresvc - for historical data acquisition
 3.1. sunpdfsvc - for PDF output format rendering
 or
-3.2. sunxlsxsvc - for XLSX report rendering" with relevance 0.7
+3.2. sunxlsxsvc - for XLSX report rendering"
 
 What is the brief explanation of the issue:
