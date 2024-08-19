@@ -1,1 +1,1 @@
-Report rendering in Moon reporting system produces empty data in the columns with real-time data.
+Report generation in SUN system is consistently failing for reports with CSV format output.

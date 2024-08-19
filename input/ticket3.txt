@@ -1,0 +1,1 @@
+Report rendering in Moon reporting system produces empty data in the columns with real-time data.
