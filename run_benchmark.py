@@ -5,6 +5,9 @@ from llm_pipeline import get_llm_pipeline
 from file_loader import load_file, load_files
 
 MODEL="llama3.1"
+# MODEL="phi3:medium"
+# MODEL="gemma2:9b"
+# MODEL="mistral"
 PROMPT="prompt3.txt"
 
 tickets = load_files("input", "*.txt")
@@ -14,7 +17,7 @@ predicted = []
 
 document_store = get_docs_store(MODEL)
 for ticket in tickets:
-  print("Running ", ticket)
+  print("Running:", ticket)
   query = ticket
 
   query_embedding = get_embeddings(MODEL, query)
@@ -34,5 +37,5 @@ result = sas_evaluator.run(
   predicted_answers=predicted
 )
 print(f"Model={MODEL} Prompt={PROMPT}")
-print(f"Individual scores={'\n'.join(map(str, zip(tickets, result['individual_scores'])))}")
 print(f"Score={result['score']}")
+print(f"Individual scores:\n{'\n'.join(map(str, zip(tickets, result['individual_scores'])))}")

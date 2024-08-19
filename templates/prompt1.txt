@@ -4,4 +4,4 @@ Given the issue: {{ query }} and given troubleshooting docs:
     {{ document.content }}
 {% endfor %}
 
-Point out the service that is most probably failing and/or suggest steps to investigate deeper
+What to look at?

@@ -5,4 +5,4 @@ Given the issue: {{ query }} and given troubleshooting docs:
 {% endfor %}
 
 Point out the service or two services that is(are) most probably failing or suggest steps to investigate deeper.
-Let me know if there are any decisive gaps in the troubleshooting docs that could significantly affect your answer.
+Mention most crucial gaps in the troubleshooting docs that could significantly affect your answer if filled.

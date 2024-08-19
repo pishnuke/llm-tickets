@@ -3,6 +3,9 @@ from llm_pipeline import get_llm_pipeline
 from file_loader import load_file
 
 MODEL="llama3.1"
+# MODEL="phi3:medium"
+# MODEL="gemma2:9b"
+# MODEL="mistral"
 PROMPT="prompt3.txt"
 
 TICKET="ticket2.txt"
