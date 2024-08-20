@@ -1,0 +1,36 @@
+Given the issue: {{ query }}
+
+And the following troubleshooting documentation:
+
+{% for document in documents %}
+    {{ document.content }}
+{% endfor %}
+
+Please provide a structured response with the following elements:
+
+1. Most Probable Service(s) Failing:
+   - List the top 1-2 services that are most likely failing
+   - For each service, provide:
+     a) Reasoning based on the given information
+     b) Confidence level (Low/Medium/High)
+     c) Specific examples from the troubleshooting docs supporting this conclusion
+
+2. Investigation Steps:
+   - Provide a prioritized list of 3-5 steps to investigate the issue further
+   - For each step, include:
+     a) Rationale for this step
+     b) Expected outcome
+     c) Potential impact on resolving the issue (Low/Medium/High)
+
+3. Documentation Gaps:
+   - Identify 2-3 crucial pieces of information missing from the troubleshooting docs
+   - For each gap, explain:
+     a) Why this information is important
+     b) How it could affect the accuracy of the diagnosis
+     c) Suggested questions to ask or data to gather to fill this gap
+
+4. Additional Context Needed:
+   - List any assumptions made in your analysis
+   - Suggest 2-3 clarifying questions that would help refine the diagnosis
+
+Please ensure your response is concise yet thorough, providing clear and actionable insights based on the given information.

@@ -1,5 +1,9 @@
 # llm-tickets
 
+### Prompt engineering
+
+https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+
 
 ### Model=llama3.1 Prompt=prompt3.txt
 

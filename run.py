@@ -6,9 +6,9 @@ MODEL="llama3.1"
 # MODEL="phi3:medium"
 # MODEL="gemma2:9b"
 # MODEL="mistral"
-PROMPT="prompt3.txt"
+PROMPT="prompt6.txt"
 
-TICKET="ticket2.txt"
+TICKET="ticket3.txt"
 
 query = load_file("input", TICKET)
 

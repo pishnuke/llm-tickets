@@ -1,0 +1,17 @@
+Context:
+
+You have a set of troubleshooting documents:
+
+{% for document in documents %}
+    {{ document.content }}
+{% endfor %}
+
+Issue:
+
+{{ query }}
+
+Tasks:
+
+1. Identify Potential Failures: Based on the troubleshooting documents provided, determine which one or two services are most likely failing or suggest specific steps to investigate the issue further.
+2. Assess Documentation Gaps: Identify any crucial gaps in the troubleshooting documents that, if addressed, would significantly enhance the accuracy of your response.
+3. Provide a Thought Process: Outline your chain of thoughts and reasoning behind identifying the likely failing services and the documentation gaps.

@@ -8,7 +8,7 @@ MODEL="llama3.1"
 # MODEL="phi3:medium"
 # MODEL="gemma2:9b"
 # MODEL="mistral"
-PROMPT="prompt3.txt"
+PROMPT="prompt6.txt"
 
 tickets = load_files("input", "*.txt")
 ground_truth = load_files("input", "*.validation")
