@@ -17,3 +17,9 @@ def get_llm_pipeline(model: str, document_store, template: str):
   pipe.connect("retriever", "prompt_builder.documents")
   pipe.connect("prompt_builder", "llm")
   return pipe
+
+
+def ask_llm(pipe, query: str, query_embedding: list) -> str:
+  response = pipe.run({"prompt_builder": {"query": query}, "retriever": {"query_embedding": query_embedding}})
+
+  return "".join(response["llm"]["replies"])

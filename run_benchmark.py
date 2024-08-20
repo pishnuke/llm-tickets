@@ -1,7 +1,7 @@
 from haystack.components.evaluators import SASEvaluator # https://docs.haystack.deepset.ai/docs/sasevaluator
 
 from doc_store import get_docs_store, get_embeddings
-from llm_pipeline import get_llm_pipeline
+from llm_pipeline import ask_llm, get_llm_pipeline
 from file_loader import load_file, load_files
 
 MODEL="llama3.1"
@@ -26,9 +26,8 @@ for ticket in tickets:
 
   pipe = get_llm_pipeline(MODEL, document_store, template)
 
-  response = pipe.run({"prompt_builder": {"query": query}, "retriever": {"query_embedding": query_embedding}})
-
-  predicted.append("".join(response["llm"]["replies"]))
+  response = ask_llm(pipe, query, query_embedding)
+  predicted.append(response)
 
 sas_evaluator = SASEvaluator()
 sas_evaluator.warm_up()

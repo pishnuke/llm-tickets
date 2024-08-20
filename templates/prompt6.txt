@@ -11,5 +11,5 @@ Issue:
 {{ query }}
 
 Be extremely concise. Make the educated wish what 1-2 services are failing not assuming that the troubleshooting docs are complete (with the confidence level Low/Medium/High) and write 1-2 important documentation gaps (especially missing services or feature) that forces you to make assumptions.
-Example#1:  Suspected services: moonacquiresvc (High), anothersvc (Low). Troubleshooting gaps: the exact behavior of missing historical data is not defined.
-Example#1:  Suspected services: someboringsvc (Low). Troubleshooting gaps: missing information whether this service supports CSV rendering.
+Example#1:  Suspected services: moonacquiresvc (High), anothersvc (Low). Documentation gaps: the exact behavior of missing historical data is not defined.
+Example#1:  Suspected services: someboringsvc (Low). Documentation gaps: missing information whether this service supports CSV rendering.

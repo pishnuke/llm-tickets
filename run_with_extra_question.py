@@ -8,7 +8,7 @@ MODEL="llama3.1"
 # MODEL="mistral"
 PROMPT="prompt6.txt"
 
-TICKET="ticket2.txt"
+TICKET="ticket1.txt"
 
 query = load_file("input", TICKET)
 
@@ -19,5 +19,14 @@ template = load_file("templates", PROMPT)
 
 pipe = get_llm_pipeline(MODEL, document_store, template)
 
-response = ask_llm(pipe, query, query_embedding)
-print(response)
+response1_str = ask_llm(pipe, query, query_embedding)
+
+followup_query = f"""
+Question: {query}
+Answer: {response1_str}
+
+Follow-up Question: could your response be improved in any way? If so, rewrite it to be better. If not, just respond with <COMPLETE>
+"""
+response2_str = ask_llm(pipe, followup_query, query_embedding)
+
+print(response1_str, "\n>>>\n", response2_str)
