@@ -10,7 +10,7 @@ def get_llm_pipeline(model: str, document_store, template: str):
   params = { "temperature": 0 }
   pipe = Pipeline()
 
-  pipe.add_component("retriever", InMemoryEmbeddingRetriever(document_store=document_store, top_k=3))
+  pipe.add_component("retriever", InMemoryEmbeddingRetriever(document_store=document_store, top_k=10))
   pipe.add_component("prompt_builder", PromptBuilder(template=template))
   pipe.add_component("llm", OllamaGenerator(model=model, url=LLM_URL, generation_kwargs=params))
 

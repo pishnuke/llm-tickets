@@ -1,0 +1,21 @@
+Abstract reporting system execution workflow:
+
+Report Execution
+       |
+       v
++---------------------+
+| pre-acquisition     |  <-- Transform report parameters
++---------------------+
+       |
+       v
++---------------------+
+| data acquisition    |  <-- Acquire data
++---------------------+
+       |
+       v
++---------------------+
+| report rendering    |  <-- Render the report
++---------------------+
+       |
+       v
+   Report Generated

@@ -8,7 +8,7 @@ MODEL="llama3.1"
 # MODEL="mistral"
 PROMPT="prompt6.txt"
 
-TICKET="ticket3.txt"
+TICKET="ticket2.txt"
 
 query = load_file("input", TICKET)
 

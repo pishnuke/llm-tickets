@@ -5,44 +5,44 @@
 https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 
 
-### Model=llama3.1 Prompt=prompt3.txt
+### Model=llama3.1 Prompt=prompt6.txt
 
-Score=0.659238874912262
-
-Individual scores:
-
-('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.6596128344535828)
-('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.6199476718902588)
-('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.6981561183929443)
-
-
-### Model=phi3:medium Prompt=prompt3.txt
-
-Score=0.6385248303413391
+Score=0.6543293197949728
 
 Individual scores:
 
-('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.6495018601417542)
-('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.636920690536499)
-('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.6291519403457642)
-
-### Model=gemma2:9b Prompt=prompt3.txt
-
-Score=0.6255034804344177
-
-Individual scores:
-
-('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.6048611998558044)
-('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.5966679453849792)
-('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.6749812960624695)
+('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.701530396938324)
+('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.5400208234786987)
+('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.7214367389678955)
 
 
-### Model=mistral Prompt=prompt3.txt
+### Model=gemma2:9b Prompt=prompt6.txt
 
-Score=0.6045441031455994
+Score=0.6339565714200338
 
 Individual scores:
 
-('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.6102449297904968)
-('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.5822607278823853)
-('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.621126651763916)
+('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.6484900712966919)
+('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.5971818566322327)
+('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.6561977863311768)
+
+### Model=phi3:medium Prompt=prompt6.txt
+
+Score=0.6221461097399393
+
+Individual scores:
+
+('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.5979423522949219)
+('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.6677214503288269)
+('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.6007745265960693)
+
+
+### Model=mistral Prompt=prompt6.txt
+
+Score=0.6100040872891744
+
+Individual scores:
+
+('Report generation in SUN system is consistently failing for reports with PDF format output.', 0.6364946961402893)
+('Report generation in SUN system is consistently failing for reports with CSV format output.', 0.5394194722175598)
+('Report rendering in Moon reporting system produces empty data in the columns with real-time data.', 0.6540980935096741)

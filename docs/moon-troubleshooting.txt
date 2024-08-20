@@ -5,30 +5,3 @@ Report execution includes execution of the following services:
 2. moonacquiresvc - for historical data acquisition
 3. moonrealtimedatasvc - for real time data acquisition
 4. moonrendersvc - for report rendering
-
-Execution workflow:
-
-Report Execution
-       |
-       v
-+---------------------+
-| moonprepsvc         |  <-- Transform report parameters
-+---------------------+
-       |
-       v
-+---------------------+
-| moonacquiresvc      |  <-- Acquire historical data
-+---------------------+
-       |
-       v
-+---------------------+
-| moonrealtimedatasvc |  <-- Acquire real-time data
-+---------------------+
-       |
-       v
-+---------------------+
-| moonrendersvc       |  <-- Render the report
-+---------------------+
-       |
-       v
-   Report Generated
