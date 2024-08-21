@@ -1,14 +1,14 @@
-Given issue "Report rendering in Moon reporting system produces empty data in the columns with real-time data."
+Given the issue "Report rendering in Moon reporting system produces empty data in the columns with real-time data."
 Given troubleshooting docs:
-"MOON reporting system
 
+"MOON reporting system
 Report execution includes execution of the following services:
 1. moonprepsvc - for report parameter transformation
 2. moonacquiresvc - for historical data acquisition
 3. moonrealtimedatasvc - for real time data acquisition
 4. moonrendersvc - for report rendering"
-"SUN reporting system
 
+"SUN reporting system
 Report execution includes execution of the following services:
 1. sunprepsvc - for report parameter transformation
 2. sunacquiresvc - for historical data acquisition
