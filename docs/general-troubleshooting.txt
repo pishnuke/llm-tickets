@@ -1,1 +1,2 @@
-General troubleshooting: If job_id provided logs could be requested using <LOGS>service_name job_id</LOGS>
+General troubleshooting: 
+Print "<LOGS><SERVICE>service_name</SERVICE><JOBID>job_id</JOBID></LOGS>" ot request logs if job_id is provided.
