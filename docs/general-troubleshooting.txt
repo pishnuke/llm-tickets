@@ -1,2 +1,2 @@
 General troubleshooting: 
-Print "<LOGS><SERVICE>service_name</SERVICE><JOBID>job_id</JOBID></LOGS>" ot request logs if job_id is provided.
+Print "<LOGS><SERVICE>service_name</SERVICE><JOBID>job_id</JOBID></LOGS>" to request logs if job_id is provided.
