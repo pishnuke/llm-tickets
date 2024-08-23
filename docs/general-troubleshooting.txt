@@ -1,0 +1,1 @@
+General troubleshooting: If job_id provided logs could be requested using <LOGS>service_name job_id</LOGS>
